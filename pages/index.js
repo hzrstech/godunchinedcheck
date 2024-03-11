@@ -66,7 +66,7 @@ export default function Home() {
           <button onClick={downloadAddresses} className="btn btn-secondary btn-lg mt-3">下载地址</button>
         )}
           {Object.entries(tokens).map(([address, tokenAmount]) => (
-            <div key={address} className="token-amount">{`${address}: ${tokenAmount} tokens`}</div>
+            <div key={address} className="token-amount">{`${address}: 此地址可领取`}</div>
           ))}
           <Analytics />
         </div>
