@@ -12,7 +12,7 @@ export default function handler(req, res) {
       const addressesData = JSON.parse(fileContents);
 
       addresses.forEach((address) => {
-        tokensData[address] = addressesData[address.toLowerCase()] || 'Address not found';
+        tokensData[address] = addressesData[address.toLowerCase()] || '不符合资格';
       });
     }
 
